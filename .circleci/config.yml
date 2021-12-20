@@ -18,6 +18,9 @@ jobs:
           name: "Run tests"
           command: "jmeter -n -t sampleTest.jmx"
       - run:
+          name: "back"
+          command: "cd.."
+      - run:
           name: "see folder"
           command: "ls"
 # Invoke jobs via workflows
