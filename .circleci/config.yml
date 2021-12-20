@@ -19,7 +19,7 @@ jobs:
           command: "jmeter -n -t sampleTest.jmx"
       - run:
           name: "back"
-          command: "cd.."
+          command: "cd .."
       - run:
           name: "see folder"
           command: "ls"
