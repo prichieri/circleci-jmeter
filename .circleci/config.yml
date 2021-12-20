@@ -20,9 +20,6 @@ jobs:
       - run:
           name: "Run tests"
           command: "jmeter -n -t sampleTest.jmx -l results/runResults.csv -e -o results"
-      - run:
-          name: "see folder"
-          command: "ls"
       - store_artifacts:
           path: results
 # Invoke jobs via workflows
